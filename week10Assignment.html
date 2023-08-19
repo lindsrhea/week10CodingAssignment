@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title>Pet Sitter App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <!-- creates place for a start date -->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <!-- creates place for end date -->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+                <!-- creates a place for owner name to be included -->
+                    <div class="col-sm">
+                        <div class="form-pet-information">
+                            <label for="new-owner-name">Owner Name</label>
+                            <input type="text" class="form-control" id="new-owner-name">
+                        </div>
+                    </div>
+                    <!-- creates a place for a task to be filled out -->
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="new-task">Task</label>
+                                    <input type="text" class="form-control" id="new-task" placeholder="Task">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                    <button id="new-owner" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="owners">
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
